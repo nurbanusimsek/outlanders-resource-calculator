@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Resource Calculator</title>
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    table { border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #ccc; padding: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Game Resource Calculator</h1>
+
+  <h2>Select Buildings</h2>
+  <div id="building-list"></div>
+  <button onclick="calculateResources()">Calculate</button>
+
+  <h2>Results</h2>
+  <h3>Compound Totals</h3>
+  <table id="compound-table"></table>
+
+  <h3>Expanded Totals</h3>
+  <table id="expanded-table"></table>
+
+  <div id="required-buildings"></div>
+
+  <!-- Link to external JS file -->
+  <script src="script.js"></script>
+</body>
+</html>

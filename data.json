@@ -1,0 +1,96 @@
+{
+  "resources": {
+    "Bricks": { "Clay": 1, "Twigs": 1, "requiresBuilding": "Brickyard" },
+    "Planks": { "Logs": 1, "requiresBuilding": "Sawmill" }
+  },
+  "buildings": {
+    "construction": {
+      "Lumberjacks' Base": {
+        "constructionCost": { "Twigs": 6 },
+        "consumes": { "tree": 1 },
+        "produces": { "Logs": "1-5" },
+        "workers": 4
+      },
+      "Clay Pit": {
+        "constructionCost": { "Twigs": 10 },
+        "consumes": null,
+        "produces": { "Clay": 1 },
+        "workers": 3
+      },
+      "Quarry": {
+        "constructionCost": { "Logs": 6 },
+        "consumes": { "Rock": 1 },
+        "produces": { "Stones": 10 },
+        "workers": 4
+      },
+      "Sawmill": {
+        "constructionCost": { "Logs": 9 },
+        "consumes": { "Log": 1 },
+        "produces": { "Plank": 1 },
+        "workers": 3
+      },
+      "Brickyard": {
+        "constructionCost": { "Twigs": 9 },
+        "consumes": { "Twig": 1, "Clay": 8 },
+        "produces": { "Bricks": 8 },
+        "workers": 2
+      },
+      "Stone Mine": {
+        "constructionCost": { "Planks": 18, "Bricks": 12, "Logs": 6 },
+        "consumes": { "Logs": 6 },
+        "produces": { "Stones": 6 },
+        "workers": 3
+      }
+    },
+    "food": {
+      "Foragers' Hut": {
+        "constructionCost": { "Twigs": 9 },
+        "inputs": { "Nearby Fruit Trees": 1 },
+        "outputs": { "Fruit": 1 },
+        "workers": 3
+      },
+      "Farm": {
+        "constructionCost": { "Twigs": 4, "Clay": 10 },
+        "inputs": null,
+        "outputs": { "Veggies": 1, "Wheat": 1 },
+        "workers": 4
+      },
+      "Open Kitchen": {
+        "constructionCost": { "Twigs": 6, "Clay": 8 },
+        "inputs": { "Veggies/Meat/Eggs": 2, "Twig": 1 },
+        "outputs": { "Stew": 3 },
+        "workers": 3
+      },
+      "Chicken Coop": {
+        "constructionCost": { "Planks": 9 },
+        "inputs": null,
+        "outputs": { "Eggs": 1 },
+        "workers": 2
+      },
+      "Windmill": {
+        "constructionCost": { "Clay": 15, "Stone": 5 },
+        "inputs": { "Wheat": 1 },
+        "outputs": { "Flour": 1 },
+        "workers": 2
+      },
+      "Bakery": {
+        "constructionCost": { "Clay": 9, "Stone": 4 },
+        "inputs": { "Flour": 1, "Twig": 1 },
+        "outputs": { "Bread": 8 },
+        "workers": 2
+      },
+      "Cookie Shop": {
+        "constructionCost": { "Planks": 3, "Bricks": 8 },
+        "inputs": { "Flour": 1, "Eggs": 2, "Twig": 1 },
+        "outputs": { "Cookies": 8 },
+        "workers": 2
+      },
+      "Fishing Dock": {
+        "constructionCost": { "Planks": 18 },
+        "inputs": { "Eligible Shoreline": 1 },
+        "outputs": { "Meat": 1 },
+        "workers": 3
+      }
+    }
+  }
+}
